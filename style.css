@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+/* ###### HEADER ####*/
+
+#search_box, #user, header{
+  display: flex;
+  justify-content: space-between;;
+}
+
+header{
+  height: 10rem;
+  padding: 2rem;
+}
+
+
+#logo{
+  padding: 1.5rem;
+}
+
+svg{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 2rem 1rem;
+}
+
+#search_box, #user{
+  align-items: center;
+}
+
+#search_box{
+  background-color: gainsboro;
+  border-radius: 30rem;
+  padding-inline: 2rem;
+  width: 60%;
+}
+
+#search_box p{
+  font-size: 2rem;
+}
+
+#user p{
+  background-color: rgba(255, 50, 50, 0.727);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-inline: 1rem;
+  font-weight: bold;
+}

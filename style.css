@@ -35,7 +35,7 @@ a #logo{
   position: absolute;
 }
 
-svg, nav ul li img{
+svg{
   height: 2.5rem;
   width: 2.5rem;
   margin: 2rem 1rem;
@@ -82,7 +82,6 @@ nav ul{
   align-items: center;
   gap: 1rem;
   padding-left: 18rem;
-  margin-top: -2rem;
 }
 
 nav ul li, nav ul li a {
@@ -91,6 +90,10 @@ nav ul li, nav ul li a {
   cursor: pointer;
   text-decoration: none;
   color: black;
+}
+
+nav ul li{
+  padding-bottom: 1rem;
 }
 
 nav ul li:nth-child(1){
@@ -102,4 +105,10 @@ nav ul li:nth-child(1){
 
 nav ul li:nth-child(7){
   margin-left: 2rem;
+}
+
+nav ul li img, nav ul li svg{
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem 0 0;
 }

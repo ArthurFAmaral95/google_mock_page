@@ -81,6 +81,11 @@ svg{
 
 /* ###### NAV ####*/
 
+nav{
+  position: absolute;
+  top: 10rem
+}
+
 nav ul{
   display: flex;
   list-style: none;
@@ -118,15 +123,23 @@ nav ul li img, nav ul li svg{
   margin: 0 0.5rem 0 0;
 }
 
+hr{
+  position: relative;
+  width: 100vw;
+  top: 3.6rem;
+}
+
 /* ###### MAIN ####*/
 
 main{
   width: 60%;
   margin-left: 18rem;
+  position: relative;
+  top: 5rem;
 }
 
 #info{
-  margin: 1rem 0 2rem 0;
+  margin: 0 0 2rem 0;
   font-weight: lighter;
 }
 

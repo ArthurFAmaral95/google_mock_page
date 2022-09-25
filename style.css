@@ -91,7 +91,7 @@ nav ul{
   list-style: none;
   align-items: center;
   gap: 1rem;
-  padding-left: 18rem;
+  padding-left: 16rem;
 }
 
 nav ul li, nav ul li a {
@@ -231,4 +231,60 @@ ol{
 #complete_search {
   border-bottom: 1px solid black;
   padding-bottom: 1rem;
+}
+
+/* ###### VIDEOS SECTION ####*/
+
+.videos header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  border-bottom: solid 1px black;
+  height: 5rem;
+  margin-top: 5rem;
+}
+
+.videos header a img{
+  width: 2.5rem;
+}
+
+.videos header h3{
+  font-size: 2.5rem;
+}
+
+.video{
+  display: flex;
+  padding-block: 2rem;
+  gap: 2rem;
+  border-bottom: solid 1px gray;
+}
+
+.video iframe{
+  width: 20rem;
+  height: 10rem;
+  border-radius: 2rem;
+}
+.video .link{
+  padding-bottom: 1rem;
+}
+
+.videos footer{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  background-color: gainsboro;
+  margin-inline: 20%;
+  padding-inline: 10%;
+  width: 60%;
+  border-radius: 2rem;
+  position: relative;
+  top: -1.2rem;
+  cursor: pointer;
+}
+
+.videos footer img {
+  width: 2rem;
 }

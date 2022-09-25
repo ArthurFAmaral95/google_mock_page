@@ -18,8 +18,22 @@ body{
   font-family: Arial, sans-serif;
 }
 
+main, footer#page{
+  width: 60%;
+  margin-left: 18rem;
+}
+
 a{
   text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+a #logo{
+  padding: 1.5rem;
+  width: 12rem;
 }
 
 /* ###### HEADER ####*/
@@ -32,12 +46,6 @@ a{
 header{
   height: 10rem;
   padding: 2rem;
-}
-
-a #logo{
-  padding: 1.5rem;
-  width: 12rem;
-  position: absolute;
 }
 
 svg{
@@ -88,7 +96,6 @@ nav{
 
 nav ul{
   display: flex;
-  list-style: none;
   align-items: center;
   gap: 1rem;
   padding-left: 16rem;
@@ -132,8 +139,6 @@ hr{
 /* ###### MAIN ####*/
 
 main{
-  width: 60%;
-  margin-left: 18rem;
   position: relative;
   top: 5rem;
 }
@@ -184,7 +189,7 @@ span{
 }
 
 .other_searches > h3{
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 3rem 0 0.5rem 0;
   border-bottom: 1px solid black;
 }
@@ -285,6 +290,52 @@ ol{
   cursor: pointer;
 }
 
-.videos footer img {
+.arrow {
   width: 2rem;
+}
+
+/* ###### RELATED SEARCHES SECTION ####*/
+
+.related_searches{
+  margin-block: 3rem;
+}
+
+.related_searches h3{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.related_searches ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.related_searches ul li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: gainsboro;
+  border-radius: 3rem;
+  cursor: pointer;
+  padding-inline:1.5rem;
+}
+
+/* ###### FOOTER ####*/
+
+#page{
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page div, #page div ul{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#page #logo{
+  padding: 0;
 }

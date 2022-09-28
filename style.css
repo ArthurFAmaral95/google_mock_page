@@ -48,6 +48,11 @@ header{
   padding: 2rem;
 }
 
+#menu{
+  visibility: hidden;
+  position: absolute;
+}
+
 svg{
   height: 2.5rem;
   width: 2.5rem;
@@ -132,7 +137,7 @@ nav ul li img, nav ul li svg{
 
 hr{
   position: relative;
-  width: 100vw;
+  width: 100%;
   top: 3.6rem;
 }
 
@@ -338,4 +343,73 @@ ol{
 
 #page #logo{
   padding: 0;
+}
+
+/* ###### LAYOUT FOR DEVICES SMALLER THAN 880PX ####*/
+
+@media (max-width: 880px){
+
+  html, body, #search_box{
+    min-width: 400px;
+  }
+
+main, footer#page{
+  width: 100%;
+  padding-inline: 1rem;
+  margin-left: 0;
+}
+
+#search_box{
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+}
+
+nav ul {
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+nav {
+  width: calc(100% - 2rem);
+  padding-right: 1rem;
+}
+
+#search_box{ 
+  left: 0;
+}
+
+header nav img, header nav svg, header #user svg, header #search_box svg:nth-child(1), header #search_box svg:nth-child(2) {
+  visibility: hidden;
+  position: absolute;
+}
+
+body, nav{
+  margin-top: 4rem;
+}
+
+header #logo{
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 4.5rem);
+  padding: 0;
+  margin-top: 1rem;
+}
+
+#user p{
+  position: absolute;
+  top: 0rem;
+  margin-top: 1rem;
+  right: 4%;
+  margin-inline: 0;
+}
+
+#menu{
+  visibility: visible;
+  width: 3rem;
+  top: 0rem;
+  margin-top: 1rem;
+  left: 4%;
+  cursor: pointer;
+}
+
 }
